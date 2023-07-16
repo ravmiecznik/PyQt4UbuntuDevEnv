@@ -1,3 +1,3 @@
 #!/bin/bash
 xhost +local:docker
-docker-compose -f emubt-sdk.yaml up
+docker-compose -f py1t4-dev-env.yaml up
