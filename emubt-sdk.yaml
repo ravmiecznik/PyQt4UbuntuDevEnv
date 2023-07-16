@@ -1,0 +1,19 @@
+version: '3'
+
+version: '3'
+services:
+  emubt-sdk:
+    build: .
+    container_name: emubt-sdk
+    command: python /home/root/emu_bt_r/main.py
+    # tty: true
+    environment:
+      - DISPLAY=$DISPLAY
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /etc/machine-id:/etc/machine-id
+      - ./shared:/home/root
+      - /home/rafal/git/emu_bt_r:/home/root/emu_bt_r
+    devices:
+      - /dev/snd
