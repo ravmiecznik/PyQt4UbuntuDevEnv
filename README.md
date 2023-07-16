@@ -1,6 +1,6 @@
 # EMUBT development environemnt setup.
 
->EMUBT app was created with old PyQt4 framework which tends to be problematic to run on recent Ubuntu versions like 22.04. This solution lets to deploy PyQt4 development in isolation from newer system version.
+>Applications created with old PyQt4 framework tends to be problematic to develop on recent Ubuntu versions like 22.04. Problem is related to installation of Qt4 sdk. This solution lets to deploy PyQt4 development in isolation from newer system version.
 
 
 

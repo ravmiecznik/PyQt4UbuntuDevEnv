@@ -6,7 +6,7 @@ services:
     build: .
     privileged: true
     network_mode: host
-    container_name: emubt-dev-env
+    container_name: pyqt-dev-env
     tty: true
     environment:
       - DISPLAY=$DISPLAY
@@ -15,6 +15,6 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - /etc/machine-id:/etc/machine-id
       - ./shared:/home/root
-      - ./emu_bt_r:/home/root/emu_bt_r  # link emubtr sources here
+      - ./emu_bt_r:/home/root/emu_bt_r  # link source file here
     devices:
       - /dev/snd
