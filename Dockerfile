@@ -14,4 +14,7 @@ RUN pip install enum34
 RUN pip install pybluez==0.22
 RUN pip install pyqtgraph
 
+RUN apt install -y okteta
+
+
 CMD bash

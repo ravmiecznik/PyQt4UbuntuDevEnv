@@ -1,10 +1,16 @@
-To run an X application on Docker, you need to follow these steps:
+# EMUBT development environemnt setup.
+
+>EMUBT app was created with old PyQt4 framework which tends to be problematic to run on recent Ubuntu versions like 22.04. This solution lets to deploy PyQt4 development in isolation from newer system version.
+
+
+
+## In general to run an X application on Docker, you need to follow these steps:
 
 1. Install Docker: Ensure Docker is installed on your host system (Ubuntu 22.04). You can follow the official Docker documentation for installation instructions.
 
 2. Pull the Ubuntu 16.04 Docker image: Open a terminal and run the following command to download the Ubuntu 16.04 image from Docker Hub:
    ```
-   docker pull ubuntu:16.04
+   docker pull ubuntu:18.04
    ```
 
 3. Run the Docker container: Execute the following command to start the Docker container with the X display and audio settings:
